@@ -15,7 +15,7 @@ float conversao;
 
 
 
-printf("Conversıes disponÌveis\n");
+printf("Convers√µes dispon√≠veis\n");
 printf("1 - Quilometros para milhas\n");
 printf("2 - Celsius para  Fahrenheit\n");
 printf("3 - Metros para  Centimetros\n");
@@ -29,12 +29,12 @@ printf("O - programa sera encerrado\n");
 
 do {
 	
-  printf("informe o numero da convers„o\n");
+  printf("informe o numero da convers√£o\n");
   scanf("%d", &codigo);
   
-  printf("OpÁ„o %d escolhida\n", codigo);
+  printf("Op√ß√£o %d escolhida\n", codigo);
   
-  printf("informe o n˙mero que vocÍ deseja converter\n");
+  printf("informe o n√∫mero que voc√™ deseja converter\n");
   scanf("%f", &numero);
 	
 switch (codigo) {
@@ -42,26 +42,31 @@ switch (codigo) {
 case 1:
 
 conversao = (numero / 1.609) ; 
+printf ("Resultado da convers√£o %.2f\n", conversao );
 break;
 
 case 2:
 
 conversao = (numero * 1.8) + 32; 
+printf ("Resultado da convers√£o %.2f\n", conversao );
 break;	
 
 case 3:
 
 conversao = numero/100; 
+printf ("Resultado da convers√£o %.2f\n", conversao );
 break;	
 
 case 4:
 
 conversao  = numero * 10; 
+printf ("Resultado da convers√£o %.2f\n", conversao );
 break;	
 
 case 5:
 
 conversao  = numero * 10000; 
+printf ("Resultado da convers√£o %.2f\n", conversao );
 break;	
 	
 	
@@ -71,12 +76,10 @@ printf("Encerrando programa\n");
 break;
 
 default :
-printf("CÛdigo inv·lido\n");
+printf("C√≥digo inv√°lido\n");
 break;
 }
 	
-
-printf ("Resultado da convers„o %.2f\n", conversao );
 	
 } while (codigo != 0);
 
